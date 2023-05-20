@@ -1,0 +1,70 @@
+
+.homepage-lander
+{
+    display: flex;
+    min-height: 100vh;
+    background-image: url("https://plus.unsplash.com/premium_photo-1668058723804-d7dcd1ffa4c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGF3JTIwZmlybXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60");
+    background-color: rgb(161, 164, 164);
+    background-repeat:  no-repeat;
+    background-attachment: scroll;
+    background-size: 100% 100%;
+    background-position: center;
+
+    background-blend-mode: multiply;
+}
+
+.homepage-tile 
+{
+    width: 45%;
+    margin: auto 60px;
+
+    .heading, .sub-heading
+    {
+        color: var(--elewa-group-website-color);
+        font-family: var(--elewa-group-website-dmsans-regular);
+    }
+
+    .heading{
+        font-size: var(--elewa-group-website-font-size-heading);
+        letter-spacing: 1px;    
+    }
+
+    .sub-heading{
+        font-size: var(--elewa-group-website-font-size-subheading);
+    }
+
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .homepage-lander
+    {
+        min-height: 60vh;
+
+        background-position: left center;
+        background-size: auto;   
+    }
+
+    .homepage-tile
+    {
+        width: 100%;
+        margin-top: 140px;
+
+        .heading
+        {
+            width: 70%;
+
+            font-size: var( --elewa-group-website-font-size-heading-medium);
+            font-weight: var(--elewa-group-website-font-weight-title-medium);
+        }
+
+        .sub-heading{
+            width: 100%;
+
+            font-size: var( --elewa-group-website-font-size-subheading-medium);
+        }
+    }
+}
