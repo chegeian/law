@@ -1,29 +1,50 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
 a {
   text-decoration: none;
 }
-li {
+
+ul {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   list-style-type: none;
 }
+
+.nav {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .navbar {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-between;
+  background-color: #2d3045;
   height: 10vh;
   box-shadow: rgba(50, 50, 93, 0.23) 0px 30px 30px -20px;
+}
 
-  /*box-shadow: rgba(50, 50, 93, 0.23) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;*/
-}
 .logo {
-  font-size: 30px;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
 }
+
+.logo .logo-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+
 .nav-links {
   display: flex;
   justify-content: flex-end;
@@ -31,40 +52,49 @@ li {
 }
 
 .nav-links li {
-  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
   font-size: 20px;
   padding: 10px 20px;
   margin: 0 10px;
   cursor: pointer;
   text-transform: capitalize;
 }
+
 .hero {
   text-align: center;
-  margin-top: 15%;
+  margin-top: 15vh;
 }
+
 .hero h1 {
-  text-align: center;
   font-size: 80px;
+  color: white;
 }
+
 .mobile-menu-icon {
   display: none;
 }
+
 button {
   border: none;
   text-decoration: none;
   font-size: 20px;
   background: none;
 }
+
 @media (max-width: 768px) {
   .logo {
     display: flex;
     position: absolute;
     top: 15px;
-    left: 35px;
+    left: 20px;
+    color: white;
   }
+
   .nav-links {
     display: none;
   }
+
   .nav-links-mobile {
     position: absolute;
     display: block;
@@ -76,18 +106,22 @@ button {
     width: 100%;
     background-color: white;
   }
-  ul li {
+
+  .nav-links-mobile li {
     padding: 32px;
     width: 100%;
     transition: all 0.5s ease-in-out;
     text-align: center;
   }
+
   .mobile-menu-icon {
+    color: white;
     position: absolute;
     display: block;
     right: 20px;
   }
+
   .hero h1 {
     font-size: 50px;
   }
-}  
+}

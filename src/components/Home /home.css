@@ -1,70 +1,87 @@
-
-.homepage-lander
-{
+.homepage-lander {
     display: flex;
     min-height: 100vh;
-    background-image: url("https://plus.unsplash.com/premium_photo-1668058723804-d7dcd1ffa4c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGF3JTIwZmlybXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60");
-    background-color: rgb(161, 164, 164);
-    background-repeat:  no-repeat;
+    background-image: url("https://images.unsplash.com/photo-1479142506502-19b3a3b7ff33?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGxhd3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=1200&q=80");
+    background-color: white;
+    background-repeat: no-repeat;
     background-attachment: scroll;
-    background-size: 100% 100%;
+    background-size: cover;
     background-position: center;
-
     background-blend-mode: multiply;
-}
-
-.homepage-tile 
-{
+    box-shadow: 1000px 0 20px rgb(41, 43, 64), 10000px 0 20px rgb(41, 43, 64);
+  }
+  
+  /* Rest of your CSS code */
+  
+  .homepage-tile {
     width: 45%;
     margin: auto 60px;
-
-    .heading, .sub-heading
-    {
-        color: var(--elewa-group-website-color);
-        font-family: var(--elewa-group-website-dmsans-regular);
+  }
+  
+  .heading,
+  .sub-heading {
+    color: white;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .heading {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  
+  .sub-heading {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .homepage-lander {
+      min-height: 100vh;
+      background-position: center;
+      background-size: cover;
     }
-
-    .heading{
-        font-size: var(--elewa-group-website-font-size-heading);
-        letter-spacing: 1px;    
+  
+    .homepage-tile {
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 30vh;
     }
-
-    .sub-heading{
-        font-size: var(--elewa-group-website-font-size-subheading);
+  
+    .heading {
+      font-size: 26px;
+      text-align: center;
+      margin-bottom: 8px;
     }
-
-}
-
-
-
-
-@media only screen and (max-width: 768px) {
-
-    .homepage-lander
-    {
-        min-height: 60vh;
-
-        background-position: left center;
-        background-size: auto;   
+  
+    .sub-heading {
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 16px;
     }
-
-    .homepage-tile
-    {
-        width: 100%;
-        margin-top: 140px;
-
-        .heading
-        {
-            width: 70%;
-
-            font-size: var( --elewa-group-website-font-size-heading-medium);
-            font-weight: var(--elewa-group-website-font-weight-title-medium);
-        }
-
-        .sub-heading{
-            width: 100%;
-
-            font-size: var( --elewa-group-website-font-size-subheading-medium);
-        }
-    }
-}
+  }
+  .contact-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #2d3045 ;
+    color: #BFB695;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-button:hover {
+    background-color: white;
+  }
+  
+  .about-button {
+    color: #1c54b2;
+    text-decoration: underline;
+  }
+  
+ 
+  
