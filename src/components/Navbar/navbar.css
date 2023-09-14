@@ -44,6 +44,10 @@ ul {
   border-radius: 50%;
 }
 
+.mwa {
+  color: aliceblue;
+  margin-left: 10px;
+}
 
 .nav-links {
   display: flex;

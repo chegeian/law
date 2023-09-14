@@ -2,7 +2,6 @@
   background-color: #EDE9E4;
   max-width: 1500px;
   margin: 0 auto;
-  padding-top: 90px;
   padding: 90px;
 }
 
@@ -15,12 +14,7 @@
 .content-container {
   display: flex;
   align-items: center;
-}
-
-.image-container {
-  flex: 3;
-  padding-right: 30px;
-  margin-right: 20px;
+  justify-content: space-between; /* Added to center align the content */
 }
 
 .company-image {
@@ -39,12 +33,18 @@
   color: #666;
   margin-bottom: 10px;
 }
-/* .footwe{
-  padding-left: 350px;
-  margin-top: 76.3px;
-  background-color:#EDE9E4;
-} */
-/* Media queries for responsive design */
+
+.footer {
+  text-align: center; /* Added to center align the footer */
+  margin-top: 50px; /* Adjust as needed */
+  padding: 20px 0;
+  background-color: #EDE9E4;
+}
+
+.footer p {
+  margin: 0;
+}
+
 @media (max-width: 768px) {
   .title {
     font-size: 28px;
@@ -56,18 +56,13 @@
 
   .content-container {
     flex-direction: column;
-    align-items: center; /* Adjusted alignment */
-  }
-
-  .image-container {
-    margin-bottom: 10px; /* Reduced margin */
-    margin-right: 0;
+    align-items: center;
   }
 
   .company-image {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+    width: 0%;
+    max-width: 0%;
+    height: 0px;
   }
 }
 
@@ -81,11 +76,11 @@
   }
 
   .content-container {
-    align-items: flex-start; /* Align items to the left */
+    align-items: flex-start;
   }
 
-  .image-container {
-    margin-bottom: 10px; /* Reduced margin */
-    margin-right: 0;
+  .company-image {
+    margin-bottom: 0px;
   }
+ 
 }

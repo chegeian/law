@@ -12,6 +12,7 @@ const Navbar = () => {
       <nav className={Mobile ? "navbar mobile" : "navbar"}>
         <Link to='/' className='logo'>
           <img src="https://mail.google.com/mail/u/0?ui=2&ik=641e000e39&attid=0.1&permmsgid=msg-f:1766599139043412869&th=1884388e9f318b85&view=att&disp=safe&realattid=f_lhyuq9jr0" alt="Logo" className="logo-img" />
+          <p className="mwa">Mwangi mwendia Associates & Advocates</p>
         </Link>
       
         <ul className={Mobile ? "nav-links-mobile" : "nav-links"} onClick={() => setMobile(false)}>
